@@ -1,0 +1,7 @@
+.App {
+  min-height: 100vh;
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: var(--font-stack);        
+}

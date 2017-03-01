@@ -1,0 +1,26 @@
+.Message {
+  display: flex;
+  margin: 1rem 2rem;
+  padding: 1rem;
+  background: rgba(0,0,0,0.75);
+}
+
+.Message-icon,
+.Message-text {
+  margin-right: 1rem;
+}
+
+.Message-title,
+.Message-body {
+  display: block;
+}
+
+.Message-warning .Message-icon:before {
+  content: '👉';
+  font-size: 1.5rem;
+}
+
+
+.Message-time {
+  opacity: 0.5;
+}

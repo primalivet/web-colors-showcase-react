@@ -1,0 +1,52 @@
+.Card {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex: 0 0 50%;
+  border: 0.5rem solid black;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 700px) {
+  .Card {
+    flex: 0 0 300px;
+  }
+}
+
+.Card:before {
+  content: '';
+  padding-top: 100%;
+}
+
+.Card-text  {
+  position: absolute; 
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  padding: 0.5rem;
+  font-size: 0.725rem;
+  background: black; 
+}
+
+@media screen and (min-width: 700px) {
+  .Card-text {
+    padding: 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+.Card-text-label,
+.Card-text-value {
+  display: block;
+}
+
+.Card-text-label {
+  font-weight: bold;
+}
+
+.Card-text-value {
+  opacity: 0.75;
+}

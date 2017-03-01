@@ -1,0 +1,40 @@
+.BasketCard {
+  flex: 0 0 var(--touch-size);
+  height: var(--touch-size);
+  cursor: pointer;
+}
+
+.BasketCard-text {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: var(--touch-size);
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: transform 250ms, opacity 150ms;
+}
+
+.BasketCard:focus {
+  outline: none;
+}
+
+.BasketCard:hover .BasketCard-text,
+.BasketCard:focus .BasketCard-text {
+  opacity: 1;
+  transform: translateY(0)
+}
+
+.BasketCard-text-label,
+.BasketCard-text-value {
+  margin-right: 0.5rem;
+}
+
+.BasketCard-text-label {
+  font-weight: bold;
+}
+
+.BasketCard-text-value {
+  opacity: 0.75;
+}
